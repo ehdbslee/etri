@@ -13,7 +13,7 @@
 * *torchsummary*의 경우 모델의 구조 및 total parameter를 확인하기 위해 사용하였으므로 필수 패키지는 아닙니다.
 * cmd창(혹은 anaconda)에서 아래의 명령어로 설치할 수 있습니다. 
  
-```pip install package_name=version```
+```pip install {package_name}={version}```
 
 ## Dataset
 ETRI 라이프로그 데이터셋: [Assessing Sleep Quality Using Mobile EMAs: Opportunities, Practical Consideration, and Challenges](https://ieeexplore.ieee.org/document/9667514).
