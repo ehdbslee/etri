@@ -33,6 +33,7 @@ ETRI 라이프로그 데이터셋: [Assessing Sleep Quality Using Mobile EMAs: O
  
 -----
 
+
 ## Options
 > ```args.exp_name:``` 'Single modal', 'ED/Single modal' 혹은 'Multi modal', 'ED/Multi modal'로 구분하여 ```Embedding Dropout```을 수행한다.
 
@@ -83,26 +84,23 @@ for i, emb in enumerate(emb_list):
     torch.save(emb.state_dict(), f"models/{args.exp_name}/[{args.threshold}, {args.emb_dim}, {args.emb_n_layer}, {args.hid_dim},{args.n_layer}]embedding_{i}.pth")
 ```
 
+
 -----
+
 
 ## Results
 
 * Train하여 훈련된 Hyper Parameter는 아래의 표와 같으며, 이를 이용하여 Test 한다.
 
-|Params     |Single-modal   || Multi-modal   ||
-|ㅁ           |w/o ED  |w/ ED  |w/o ED  |w/ ED  |
-|-----      |-----   |-----  |-----   |-----  |
-|emb_dim    |
-|emb_n_layer|
-|hid_dim    |
-|n_layer    |
-|-----      |-----|
-|optim      |
-|scheduler  |
-|lr         |
-|l2         |
-|batch_size |
-|-----      |-----|
+```표 2:``` 훈련 Hyper Parameters
+|Params     |Single modal w/o ED  |Single modal w/ ED  |Multi modal w/o ED  |Multi modal w/ ED  |
+|:-----:    |:-----:              |:-----:             |:-----:             |:-----:            |
+|emb_dim    |x                    |x                   |50                  |50                 |
+|emb_n_layer|x                    |x                   |1                   |1                  |
+|hid_dim    |183                  |183                 |230                 |230                |
+|n_layer    |3                    |3                   |3                   |3                  |
+|lr         |0.01                 |0.01                |0.004641588833612777|0.001              |
+|l2         |1e-06                |1e-06               |1e-07               |1e-07              |
 
 
 * ```Results.ipynb``` 파일을 모두 실행하여 훈련된 4가지 모델로 성능 그래프를 도시할 수 있다.
