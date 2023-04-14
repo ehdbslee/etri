@@ -1,6 +1,9 @@
 # Etri (Sleep Dataset)
 
-> "무작위 모달 결손에 강건한 멀티모달 수면 질 예측 인공지능 기법" 논문의 실험 코드
+> "무작위 모달 결손에 강건한 멀티모달 수면 질 예측 인공지능 기법" 논문의 구현 코드
+
+```그림 1:``` 제안하는 multi-modal 수면 질 예측 모델 구조
+<immg src="img/image.png">
 
 
 ## Development Environment
