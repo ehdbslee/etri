@@ -46,6 +46,7 @@ ETRI 라이프로그 데이터셋: [Assessing Sleep Quality Using Mobile EMAs: O
   * ```args.hid_dim:``` Multi-modal 서버 예측 모델의 은닉 계층 노드 수
   * ```args.n_layer_dim:``` Multi-modal 서버 예측 모델의 은닉 계층 수
 
+
 ```그림 1:``` 제안하는 multi-modal 수면 질 예측 모델 구조
 
 <img src="img/image.png">
@@ -86,4 +87,34 @@ for i, emb in enumerate(emb_list):
 
 ## Results
 
+* Train하여 훈련된 Hyper Parameter는 아래의 표와 같으며, 이를 이용하여 Test 한다.
+
+|Params     |Single-modal   || Multi-modal   ||
+|ㅁ           |w/o ED  |w/ ED  |w/o ED  |w/ ED  |
+|-----      |-----   |-----  |-----   |-----  |
+|emb_dim    |
+|emb_n_layer|
+|hid_dim    |
+|n_layer    |
+|-----      |-----|
+|optim      |
+|scheduler  |
+|lr         |
+|l2         |
+|batch_size |
+|-----      |-----|
+
+
+* ```Results.ipynb``` 파일을 모두 실행하여 훈련된 4가지 모델로 성능 그래프를 도시할 수 있다.
+  * Test 1) 부분을 구동하여 아래의 그래프를 얻을 수 있다.
+
+  ```그림 2:``` 모달 결손 확률에 따른 검증 $R^2$ 성능
+
+  <img src="img/results1.png">
+
+  * Test 2) 부분을 구동하여 아래의 그래프를 얻을 수 있다.
+
+  ```그림 3:``` 특정 결손 상황의 검증 $R^2$ 성능
+
+  <img src="img/results2.png">
 
