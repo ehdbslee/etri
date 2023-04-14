@@ -90,6 +90,8 @@ for i, emb in enumerate(emb_list):
 
 ## Results
 
+* ```Results.ipynb``` 파일의 셀을 순서대로 **모두 실행**하여 훈련된 4가지 모델로 성능 그래프를 도시할 수 있다.
+* 
 * Train하여 훈련된 Hyper Parameter는 아래의 표와 같으며, 이를 이용하여 Test 한다.
 
 ```표 2:``` 훈련 Hyper Parameters
@@ -103,7 +105,7 @@ for i, emb in enumerate(emb_list):
 |l2         |1e-06                |1e-06               |1e-07               |1e-07              |
 
 
-* ```Results.ipynb``` 파일의 셀을 순서대로 **모두 실행**하여 훈련된 4가지 모델로 성능 그래프를 도시할 수 있다.
+
 
   * **Test 1)** 부분을 구동하여 아래의 그래프를 얻을 수 있다.
 
