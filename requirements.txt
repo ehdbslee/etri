@@ -1,0 +1,7 @@
+python=3.9.15
+pytorch=1.12.1
+torchvision=0.13.1
+numpy=1.23.1
+matplotlib=3.5.2
+torchsummary=1.5.1
+pandas=1.4.4
