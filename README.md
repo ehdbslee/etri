@@ -23,12 +23,12 @@ ETRI 라이프로그 데이터셋: [Assessing Sleep Quality Using Mobile EMAs: O
 아래의 표와 같이 특성의 modality에 따라 4개의 군집을 형성하였다.
 
 ```표 1:``` Modality에 따른 특성 분류
- |       Modality     |Features                                                                                                       |
- |:-----:             |:-----:                                                                                                        |
- |Modal 1(시간 특성)   | startDt, endDt, lastUpdate                                                                                    |
- |Modal 2(가속도 특성) | wakeupduration, wakeupcount, durationtosleep, durationtowakeup                                                |
- |Modal 3(뇌파 특성)   | lightsleepduration, deepsleepduration, remsleepduration                                                       |
- |Modal 4(신체 특성)   | hr_average, hr_min, hr_max, rr_average, rr_min, rr_max, breathing_disturbances_intensity, snoring,snoringepisodecount|
+ |Modality       |Features                                                                                                                     |
+ |:-----:               |:-----:                                                                                                               |
+ |Modal 1(시간 특성)     | startDt, endDt, lastUpdate                                                                                           |
+ |Modal 2(가속도 특성)   | wakeupduration, wakeupcount, durationtosleep, durationtowakeup                                                       |
+ |Modal 3(뇌파 특성)     | lightsleepduration, deepsleepduration, remsleepduration                                                              |
+ |Modal 4(신체 특성)     | hr_average, hr_min, hr_max, rr_average, rr_min, rr_max, breathing_disturbances_intensity, snoring,snoringepisodecount|
  
  
 -----
